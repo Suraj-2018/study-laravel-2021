@@ -46,7 +46,7 @@
                                 <!-- <input id="user_type" type="user_type" class="form-control @error('user_type') is-invalid @enderror" name="user_type" value="{{ old('user_type') }}" required autocomplete="user_type"> -->
                                 <select class="form-control @error('user_type') is-invalid @enderror" name="user_type" required>
                                     <option value="">Please Select User Type</option>
-                                    <option value="admin">Admin</option>
+                                    <!-- <option value="admin">Admin</option> -->
                                     <option value="user">User</option>
                                 </select>
 

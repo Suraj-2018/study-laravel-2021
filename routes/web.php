@@ -20,3 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/update-user', [App\Http\Controllers\HomeController::class, 'update'])->name('update-user');
+Route::get('/admin-edit-user/{id}', [App\Http\Controllers\HomeController::class, 'adminEdit'])->name('admin-edit-user');
+Route::post('/update-admin-user', [App\Http\Controllers\HomeController::class, 'updateAdminUser'])->name('update-admin-user');
+Route::get('/admin-delete-user/{id}', [App\Http\Controllers\HomeController::class, 'adminDelete'])->name('admin-delete-user');
